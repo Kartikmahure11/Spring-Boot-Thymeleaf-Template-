@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+welcome to Register Page
+
+<form action="#" th:action="@{/show}" th:object="${stud}">
+
+  <label for="fname">Roll :</label><br>
+  <input type="text"  name="roll"  th:field="*{roll}" ><br>
+  <label for="lname">Name :</label><br>
+  <input type="text" id="lname" name="name" th:field="*{name}"><br>
+  <label for="aname">Address :</label><br>
+  <input type="text" id="aname" name="address" th:field="*{address}"><br><br>
+   <label for="rname">Result :</label><br>
+  <input type="text" id="rname" name="address" th:field="*{result}"><br><br>
+  <input type="submit" value="Submit">
+  
+</form>
+
+</body>
+</html>

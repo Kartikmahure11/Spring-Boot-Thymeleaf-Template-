@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+welcome to Show Page
+Object Data : <h1 th:text = "${stud}">object</h1><br/><br/><br/>
+<div th:object = "${stud}">  
+    <h1 th:text = "${stud.roll}">Roll</h1>
+    <h1 th:text = "${stud.name}"> Name</h1>
+    <h1 th:text = "${stud.address}">Address</h1>
+     <h1 th:text = "${stud.result}">Result</h1>
+</div>
+
+</body>
+</html>
